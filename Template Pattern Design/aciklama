@@ -1,0 +1,14 @@
+Nerede Kullanıcam ? :
+    Bir durum içerisinde aynı algoritma uygulanıyor fakat  , algoritmanın farklı durumlarda sonlanması gerekiyorsa veya
+    algoritmanın sadece belirli adımlarının değişmesi gerekiyorsa.
+
+
+ -------------------------------------****************************------------------------------
+
+Bu örnekte, CoffeeTemplate soyut sınıf, bir kahve içeceğinin hazırlanma sürecini temsil eden bir template method olan prepareCoffee'yi içerir.
+ Bu template method, boilWater, brewCoffeeGrounds, pourInCup, ve addCondiments adında soyut metotları çağırarak kahve hazırlama sürecini belirler.
+
+CoffeeWithHook ve CoffeeWithoutHook sınıfları, CoffeeTemplate'ı uygular ve belirli adımları değiştirir.
+ CoffeeWithHook sınıfında addCondiments adımında şeker ve süt eklenirken, CoffeeWithoutHook sınıfında bu adım boş bırakılmıştır.
+
+Bu tasarım deseni, bir algoritmanın temel yapısını belirleyerek, farklı adımları alt sınıflar aracılığıyla özelleştirmek için kullanılır.

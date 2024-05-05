@@ -1,0 +1,9 @@
+Ne zaman Kullanıcaz ? onu bende anlamadım tam
+
+Ziyaretçi Tasarım Deseni, nesne yapısındaki nesneler üzerinde yeni işlevsellik eklemek veya değiştirmek için kullanılan bir tasarım desenidir.
+ Bu desen, bir nesne yapısındaki elemanları temsil eden sınıflar ile bu elemanları ziyaret eden bir veya daha fazla ziyaretçi sınıfını içerir.
+
+
+Diyelim ki bir hayvanat bahçesinde farklı türde hayvanlar bulunuyor.
+ Bu hayvanlar arasında aslanlar, filler ve zürafalar var.
+ Her hayvanın özel bir sesi olduğunu ve ziyaretçilere bu sesleri dinleme imkanı sunmak istiyoruz.

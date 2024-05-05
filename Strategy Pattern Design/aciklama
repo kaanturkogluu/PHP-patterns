@@ -1,0 +1,30 @@
+Açıklama :
+
+Strateji tasarım desenini bir durum için birden fazla ihtimalin olduğu durumlarda kullanmak mümkündür.
+
+Burada pattern.png içerisindeki Class Diyagramının yaklaşık olarak gerçekleştirimini görebilirsiniz .
+
+Temel Mantık :
+
+1->  İnterface Oluşturup her sınıfın sahip olmasının zorunlu olduğu metodu yaz.
+
+2-> Farklı durumlar için çalışacak olan fonksiyon/algoritmalarını oluştur .
+
+3-> Aracı sınıfını oluştur .
+ Aracı sınıf : İhtiyacım olan algoritmayı çağırmak için kullanılacak olan ve bir yandan kapsülleme işlemlerini
+ yapacak olan sınıfım .
+
+4->  Aracı sınıfım üzerinden ihtiyacın olan algoritmayı çağırarak işlemini gerçekleştir.
+
+
+
+
+Örnek kullanım :
+                    //Aracı sınıf için  nesnemi oluşturdum.
+                    $context = new Context();
+
+                 // Toplama işlemi için yazılan fonksiyonumu parametre olarak gönderdim
+                 $context->setStrategy(new OperationAdd());
+                  // Toplama işleminin yapılacağı sayıları paramtre olarak gönderdim .
+                 $result = $context->executeStrategy(5, 3);
+                 // artık $result değişkenimin içersinde sonucuma sahibim.

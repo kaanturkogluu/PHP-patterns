@@ -1,0 +1,15 @@
+Ne zaman Kullanacağım ?
+Çeşitli Komutlar İçin Bir Bekleme (Queue) Kuyruğu İhtiyacı Olduğunda:
+Command deseni, bir bekleyen kuyruk yapısını uygulayarak ve bu kuyruktaki komutları sırayla çalıştırarak kullanılabilir.
+
+
+---------------------------------------*------------------------------------
+Bu senaryoda command tasarım deseni kullanılarak sipariş alma işlemini gerçekleştireceğiz.
+
+ICommand arayüzü, sipariş yönetiminde gerçekleştirilecek işlem için bir kontrat sağlar.
+PlaceOrderCommand sınıfı, bu arayüzü implement eder ve gerçek sipariş işlemini Order sınıfı üzerinden gerçekleştirir.
+Order sınıfı, gerçek sipariş işlemini temsil eder.
+
+Waiter (Garson) sınıfı, bir Command nesnesini içerir ve üzerinden işlemi başlatır.
+Kullanıcı, Waiter sınıfı üzerinden bir Command nesnesini set eder ve ardından takeOrder metodu ile işlemi başlatır.
+Bu örnekte, Waiter sınıfı siparişi alır ve ilgili PlaceOrderCommand nesnesini kullanarak siparişi işler.

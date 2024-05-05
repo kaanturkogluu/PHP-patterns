@@ -1,0 +1,8 @@
+Nerede Kullanıcam ?
+Mediator tasarım desenini, özellikle bir grup nesne arasında karmaşık etkileşimlerin olduğu durumlarda kullanabilirsin.
+
+
+
+
+Örnek bir senaryo olarak, bir sohbet uygulamasındaki kullanıcılar arası iletişimi ele alalım.
+Bu uygulama içinde, kullanıcılar birbirleriyle doğrudan iletişim kurmak yerine bir aracı (Mediator) kullanacaklar.
